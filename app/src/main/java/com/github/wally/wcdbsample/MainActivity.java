@@ -86,11 +86,11 @@ public class MainActivity extends RxAppCompatActivity {
                             dto.setAge(18);
                             dtos.add(dto);
                         }
-                        Log.d(TAG, ("插入开始..."));
+                        Log.d(TAG, ("本次插入" + size + "条数据 " + "插入开始..."));
                         long start = System.currentTimeMillis();
                         mPersonBiz.addPersons(dtos);
                         long end = System.currentTimeMillis();
-                        Log.d(TAG, ("插入结束...耗时：" + (end - start)));
+                        Log.d(TAG, ("本次插入" + size + "条数据 " + "插入结束...耗时：" + (end - start)));
                     }
                     isEnsureCheckData = true;
                 }
